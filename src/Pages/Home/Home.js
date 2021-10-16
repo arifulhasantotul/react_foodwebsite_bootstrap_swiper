@@ -1,11 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import HomeSlider from "../../components/SliderInit/HomeSlider";
 
 const Home = () => {
    return (
-      <div className="container">
+      <Container fluid>
          <HomeSlider></HomeSlider>
-      </div>
+      </Container>
    );
 };
 

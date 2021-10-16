@@ -14,16 +14,43 @@
    font-weight: 800;
    color: var(--black);
 }
+.header_navbar .navbar_list .nav_logo {
+   display: flex;
+   align-items: center;
+}
 .header_navbar .navbar_list .navbar_icons {
    display: flex;
    align-items: center;
    justify-content: center;
 }
+.header_navbar .navbar_list .navbar_icons .nav_icon:hover {
+   color: var(--white);
+   background: var(--green);
+   transform: rotate(360deg);
+   transition: all 0.3s ease;
+}
 .header_navbar .navbar_list .navbar_icons .nav_icon {
    font-size: 2.5rem;
    background: var(--fade-white);
-   padding: 0.9rem 1rem 0.4rem 1rem;
+   padding: 0.4rem 1rem;
+   /* padding: 1rem; */
    margin-right: 2rem;
    border-radius: 50%;
    cursor: pointer;
+}
+@media (max-width: 768px) {
+   html {
+      font-size: 55%;
+   }
+   .header_navbar .navbar_list .brand_name {
+      display: none;
+   }
+}
+@media (max-width: 450px) {
+   html {
+      font-size: 48%;
+   }
+   .header_navbar .navbar_list .brand_name {
+      display: none;
+   }
 }

@@ -10,7 +10,7 @@ const Header = () => {
       <div className="header">
          <nav className="header_navbar">
             <div className="navbar_list">
-               <div>
+               <div className="nav_logo">
                   <GrIcons.GrRestaurant />
                   <span className="brand_name">BlackPepper</span>
                </div>
