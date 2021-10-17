@@ -1,0 +1,80 @@
+.home_food {
+   padding-left: 7%;
+}
+.home_food .box {
+   padding: 2.5rem;
+   max-width: 28rem;
+   background: var(--white);
+   border: 0.1rem solid rgba(0, 0, 0, 0.2);
+   border-radius: 0.5rem;
+   box-shadow: var(--box-shadow);
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+   margin: 0.75rem;
+}
+
+.home_food .box .box_heart,
+.home_food .box .box_eye {
+   position: absolute;
+   height: 5rem;
+   width: 5rem;
+   top: 1.5rem;
+   background: var(--fade-white);
+   border-radius: 50%;
+   line-height: 5rem;
+   font-size: 2rem;
+   color: var(--black);
+   transition: all 0.3s ease;
+}
+.home_food .box .box_heart:hover,
+.home_food .box .box_eye:hover {
+   background: var(--green);
+   color: var(--white);
+}
+.home_food .box .box_eye {
+   left: -15rem;
+}
+.home_food .box .box_heart {
+   right: -15rem;
+}
+.home_food .box:hover .box_heart {
+   right: 1.5rem;
+}
+.home_food .box:hover .box_eye {
+   left: 1.5rem;
+}
+.home_food .box .box_star {
+   font-size: 2rem;
+   color: var(--green);
+}
+.home_food .box img {
+   height: 17rem;
+   margin: 1rem 0;
+}
+.home_food .box h3 {
+   color: var(--black);
+   font-size: 2.5rem;
+   margin: 1rem 0;
+   font-weight: 600;
+}
+.home_food .box h3.box_price {
+   color: var(--green);
+   font-weight: 900;
+   font-size: 3rem;
+}
+.box_btn {
+   margin-top: 1rem;
+   display: inline-block;
+   font-size: 1.7rem;
+   color: var(--white);
+   background: var(--black);
+   border-radius: 0.5rem;
+   cursor: pointer;
+   padding: 0.8rem 3rem;
+   transition: all 0.3s ease;
+}
+.box_btn:hover {
+   background: var(--green);
+   letter-spacing: 0.1rem;
+}

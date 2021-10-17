@@ -43,6 +43,9 @@ li {
    left: 78px;
    max-width: calc(100% - 78px);
 }
+.swiper-pagination-bullet-active {
+   background: var(--green);
+}
 
 @media (max-width: 768px) {
    html {
