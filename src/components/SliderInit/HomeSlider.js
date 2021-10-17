@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import pic01 from "../../images/home-img-1.png";
 import pic02 from "../../images/home-img-2.png";
 import pic03 from "../../images/home-img-3.png";
+import HomeNav from "../HomeNav/HomeNav";
 import "./HomeSlider.css";
 
 SwiperCore.use([Autoplay, Pagination]);
@@ -63,6 +64,7 @@ const HomeSlider = () => {
                </div>
             </SwiperSlide>
          </Swiper>
+         <HomeNav></HomeNav>
       </>
    );
 };

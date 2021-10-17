@@ -1,5 +1,6 @@
 .home_food {
-   padding-left: 7%;
+   padding: 5rem 4% 0 14%;
+   background: var(--fade-white);
 }
 .home_food .box {
    padding: 2.5rem;

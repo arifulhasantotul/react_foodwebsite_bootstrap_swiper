@@ -47,6 +47,11 @@ li {
    background: var(--green);
 }
 
+@media (max-width: 1024px) {
+   html {
+      font-size: 59%;
+   }
+}
 @media (max-width: 768px) {
    html {
       font-size: 55%;

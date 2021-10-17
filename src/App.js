@@ -4,6 +4,7 @@ import "swiper/swiper-bundle.css";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import NotFound from "./components/NotFound/NotFound";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Home from "./Pages/Home/Home";
 
@@ -22,6 +23,9 @@ function App() {
                </Route>
                <Route exact path="/dashboard">
                   <Dashboard></Dashboard>
+               </Route>
+               <Route path="*">
+                  <NotFound></NotFound>
                </Route>
             </Switch>
          </Router>

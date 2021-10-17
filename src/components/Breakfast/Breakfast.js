@@ -5,8 +5,8 @@ import BreakfastMenu from "./BreakfastMenu";
 
 const Breakfast = () => {
    return (
-      <div className="container home_food">
-         <div className="row">
+      <div className="container-fluid home_food">
+         <div className="row justify-content-center">
             {BreakfastData.map((breakfast) => (
                <BreakfastMenu
                   key={breakfast.id}

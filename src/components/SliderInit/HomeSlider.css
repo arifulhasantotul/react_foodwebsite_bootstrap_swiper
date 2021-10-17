@@ -5,12 +5,12 @@
 .home_slider .slide_item span {
    color: var(--green);
    font-size: 2.5rem;
-   font-weight: 600;
+   font-weight: 500;
 }
 .home_slider .slide_item h3 {
    color: var(--black);
    font-size: 7rem;
-   font-weight: 700;
+   font-weight: 800;
 }
 .home_slider .slide_item p {
    color: var(--light-color);

@@ -1,0 +1,26 @@
+.home_nav_menu {
+   background: var(--fade-white);
+   padding-top: 5rem;
+   margin-top: 2rem;
+}
+.home_nav_menu h3 {
+   color: var(--green);
+   font-size: 2.5rem;
+   font-weight: 500;
+   padding-bottom: 2rem;
+}
+.home_nav_menu .home_nav_item {
+   font-size: 3rem;
+   margin-left: 1rem;
+   font-weight: 500;
+   color: var(--black);
+   padding: 0.6rem 1.6rem;
+}
+
+.home_nav_menu .featured_selected,
+.home_nav_menu .home_nav_item:hover {
+   color: var(--green);
+   background: var(--fade-white);
+   text-decoration: underline;
+   transition: all 0.3s linear;
+}
