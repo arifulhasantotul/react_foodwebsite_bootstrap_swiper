@@ -14,6 +14,9 @@ const Home = () => {
                <Route exact path="/">
                   <Breakfast></Breakfast>
                </Route>
+               <Route exact path="/home">
+                  <Breakfast></Breakfast>
+               </Route>
                <Route path="/home/breakfast">
                   <Breakfast></Breakfast>
                </Route>

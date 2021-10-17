@@ -162,6 +162,13 @@ export const SidebarData = [
    },
    {
       id: 10,
+      title: "Login",
+      tClass: "nav_link",
+      path: "/login",
+      icon: <BiIcons.BiUserCircle />,
+   },
+   {
+      id: 11,
       title: "Settings",
       tClass: "nav_link",
       path: "/settings",

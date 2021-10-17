@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "swiper/swiper-bundle.css";
 import "./App.css";
 import Header from "./components/Header/Header";
+import Login from "./components/Login/Login";
 import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./components/NotFound/NotFound";
 import Dashboard from "./Pages/Dashboard/Dashboard";
@@ -21,8 +22,11 @@ function App() {
                <Route path="/home">
                   <Home></Home>
                </Route>
-               <Route exact path="/dashboard">
+               <Route path="/dashboard">
                   <Dashboard></Dashboard>
+               </Route>
+               <Route path="/login">
+                  <Login></Login>
                </Route>
                <Route path="*">
                   <NotFound></NotFound>
