@@ -1,5 +1,5 @@
 .home_food {
-   padding: 5rem 4% 0 14%;
+   padding: 5rem 4% 5rem 14%;
    background: var(--fade-white);
 }
 .home_food .box {
@@ -78,4 +78,14 @@
 .box_btn:hover {
    background: var(--green);
    letter-spacing: 0.1rem;
+}
+@media (max-width: 768px) {
+   .home_food .box {
+      margin: 0.75rem auto;
+   }
+}
+@media (max-width: 450px) {
+   .home_food .box {
+      margin: 0.75rem auto;
+   }
 }

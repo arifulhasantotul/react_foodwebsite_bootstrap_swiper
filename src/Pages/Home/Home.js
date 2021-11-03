@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Breakfast from "../../components/Breakfast/Breakfast";
 import Dinner from "../../components/Dinner/Dinner";
 import Lunch from "../../components/Lunch/Lunch";
+import ReviewSec from "../../components/ReviewSec/ReviewSec";
 import HomeSlider from "../../components/SliderInit/HomeSlider";
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
                   <Dinner></Dinner>
                </Route>
             </Switch>
+            <ReviewSec></ReviewSec>
          </Router>
       </>
    );

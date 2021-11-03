@@ -5,23 +5,23 @@ import "./HomeNav.css";
 const HomeNav = () => {
    return (
       <div className="container-fluid text-center home_nav_menu">
-         <h3>Our Menu</h3>
+         <h3 className="sub_heading">Our Menu</h3>
          <NavLink
-            className="home_nav_item"
+            className="home_nav_item heading"
             activeClassName="featured_selected"
             to="/home/breakfast"
          >
             Breakfast
          </NavLink>
          <NavLink
-            className="home_nav_item"
+            className="home_nav_item heading"
             activeClassName="featured_selected"
             to="/home/lunch"
          >
             Lunch
          </NavLink>
          <NavLink
-            className="home_nav_item"
+            className="home_nav_item heading"
             activeClassName="featured_selected"
             to="/home/dinner"
          >
