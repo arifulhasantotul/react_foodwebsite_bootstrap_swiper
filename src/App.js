@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./components/NotFound/NotFound";
+import Register from "./components/Register/Register";
 import AuthProvider from "./context/AuthProvider";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Home from "./Pages/Home/Home";
@@ -29,6 +30,9 @@ function App() {
                   </Route>
                   <Route path="/login">
                      <Login></Login>
+                  </Route>
+                  <Route path="/register">
+                     <Register></Register>
                   </Route>
                   <Route path="*">
                      <NotFound></NotFound>

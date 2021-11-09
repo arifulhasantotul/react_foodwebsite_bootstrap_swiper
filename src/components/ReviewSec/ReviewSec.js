@@ -18,8 +18,8 @@ SwiperCore.use([Virtual, EffectCoverflow, Pagination, Autoplay, Keyboard]);
 const ReviewSec = () => {
    return (
       <Container className="review">
-         <h3 class="sub_heading">Customer's review</h3>
-         <h1 class="heading">what they say</h1>
+         <h3 className="sub_heading">Customer's review</h3>
+         <h1 className="heading">what they say</h1>
          {reviewData.length > 0 && (
             <Swiper
                effect={"coverflow"}

@@ -4,12 +4,12 @@ import { useForm } from "react-hook-form";
 import * as FcIcons from "react-icons/fc";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import "./Login.css";
+import "../Login/Login.css";
 
-const Login = () => {
+const Register = () => {
    const location = useLocation();
    const history = useHistory();
-   const { signInUsingGoogle, isLoading } = useAuth();
+   const { signInUsingGoogle, isLoading, registerUserEmail } = useAuth();
    const {
       register,
       handleSubmit,
@@ -23,15 +23,31 @@ const Login = () => {
    };
    const onSubmit = (data) => {
       console.log(data);
-      // signInWithEmail(data.email, data.password, redirect_uri);
+      registerUserEmail(
+         data.name,
+         data.email,
+         data.password,
+         history,
+         redirect_uri
+      );
    };
    return (
       <div className="container-fluid form_wrapper">
-         <h3 className="sub_heading">Please Login</h3>
-         <h1 className="heading">Login Form</h1>
+         <h3 className="sub_heading">Please Create an Account</h3>
+         <h1 className="heading">Register Form</h1>
          {/* {authError && <div style={{ color: "red" }}></div>} */}
          {!isLoading && (
             <form className="form_login" onSubmit={handleSubmit(onSubmit)}>
+               <div className="input_field">
+                  <span>Your Name</span>
+                  <input
+                     type="text"
+                     {...register("displayName", { required: true })}
+                  />
+                  {errors.displayName && (
+                     <span className="error">Name is required</span>
+                  )}
+               </div>
                <div className="input_field">
                   <span>Your Email</span>
                   <input
@@ -55,9 +71,25 @@ const Login = () => {
                   )}
                </div>
 
-               <input type="submit" className="box_btn" value="Login" />
+               <div className="input_field">
+                  <span>Re-enter Password</span>
+                  <input
+                     type="password"
+                     {...register("checkPassword", { required: false })}
+                  />
+
+                  {errors.checkPassword && (
+                     <span className="error">Give password again</span>
+                  )}
+               </div>
+
+               <input
+                  type="submit"
+                  className="box_btn"
+                  value="Create Account"
+               />
                <p>
-                  don't have account? <Link to="/register">Create one</Link>
+                  already have an account? <Link to="/login">Login now</Link>
                </p>
             </form>
          )}
@@ -83,4 +115,4 @@ const Login = () => {
    );
 };
 
-export default Login;
+export default Register;
