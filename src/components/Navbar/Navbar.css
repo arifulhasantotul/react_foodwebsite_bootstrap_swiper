@@ -180,6 +180,11 @@
 .sidebar .profile_details .job {
    font-size: 1.2rem;
 }
+.sidebar .profile_details .logout_icon .navbar_user_btn {
+   background: transparent;
+   border: none;
+   outline: none;
+}
 .sidebar.close .profile_details .profile_name,
 .sidebar.close .profile_details .job,
 .sidebar.close .profile_details .logout_icon {

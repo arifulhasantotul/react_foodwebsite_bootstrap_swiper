@@ -1,11 +1,15 @@
 import React from "react";
+import { Spinner } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { Link, useLocation } from "react-router-dom";
 import * as FcIcons from "react-icons/fc";
+import { Link, useHistory, useLocation } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 import "./Login.css";
 
 const Login = () => {
    const location = useLocation();
+   const history = useHistory();
+   const { signInUsingGoogle, isLoading } = useAuth();
    const {
       register,
       handleSubmit,
@@ -13,6 +17,10 @@ const Login = () => {
    } = useForm();
 
    const redirect_uri = location?.state?.form || "/";
+
+   const handleGoogleSignIn = () => {
+      signInUsingGoogle(history, redirect_uri);
+   };
    const onSubmit = (data) => {
       console.log(data);
       // signInWithEmail(data.email, data.password, redirect_uri);
@@ -48,12 +56,21 @@ const Login = () => {
          </form>
          <div className="other_login">
             <h3>Sign in via</h3>
-            <button>
-               {" "}
-               <span className="login_icon">
-                  <FcIcons.FcGoogle />{" "}
-               </span>
-            </button>
+            {!isLoading && (
+               <button onClick={handleGoogleSignIn}>
+                  {" "}
+                  <span className="login_icon">
+                     <FcIcons.FcGoogle />{" "}
+                  </span>
+               </button>
+            )}
+            {isLoading && (
+               <Spinner
+                  animation="border"
+                  variant="info"
+                  style={{ width: "4rem", height: "4rem", fontSize: "2rem" }}
+               />
+            )}
          </div>
       </div>
    );
