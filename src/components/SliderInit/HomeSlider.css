@@ -13,7 +13,7 @@
    font-weight: 800;
 }
 .home_slider .slide_item p {
-   color: var(--light-color);
+   color: var(--light_color);
    font-size: 2rem;
    line-height: 1.5;
    padding: 0.5rem 0;

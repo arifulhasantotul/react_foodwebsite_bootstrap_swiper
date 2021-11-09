@@ -8,10 +8,12 @@ import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./components/NotFound/NotFound";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Home from "./Pages/Home/Home";
+// import AuthProvider from "./context/AuthProvider";
 
 function App() {
    return (
       <>
+         {/* <AuthProvider> */}
          <Router>
             <Navbar></Navbar>
             <Header></Header>
@@ -33,6 +35,7 @@ function App() {
                </Route>
             </Switch>
          </Router>
+         {/* </AuthProvider> */}
       </>
    );
 }

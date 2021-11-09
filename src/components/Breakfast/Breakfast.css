@@ -1,6 +1,6 @@
 .home_food {
    padding: 5rem 4% 5rem 14%;
-   background: var(--fade-white);
+   background: var(--fade_white);
 }
 .home_food .box {
    padding: 2.5rem;
@@ -8,7 +8,7 @@
    background: var(--white);
    border: 0.1rem solid rgba(0, 0, 0, 0.2);
    border-radius: 0.5rem;
-   box-shadow: var(--box-shadow);
+   box-shadow: var(--box_shadow);
    position: relative;
    overflow: hidden;
    text-align: center;
@@ -21,7 +21,7 @@
    height: 5rem;
    width: 5rem;
    top: 1.5rem;
-   background: var(--fade-white);
+   background: var(--fade_white);
    border-radius: 50%;
    line-height: 5rem;
    font-size: 2rem;
@@ -64,21 +64,7 @@
    font-weight: 900;
    font-size: 3rem;
 }
-.box_btn {
-   margin-top: 1rem;
-   display: inline-block;
-   font-size: 1.7rem;
-   color: var(--white);
-   background: var(--black);
-   border-radius: 0.5rem;
-   cursor: pointer;
-   padding: 0.8rem 3rem;
-   transition: all 0.3s ease;
-}
-.box_btn:hover {
-   background: var(--green);
-   letter-spacing: 0.1rem;
-}
+
 @media (max-width: 768px) {
    .home_food .box {
       margin: 0.75rem auto;

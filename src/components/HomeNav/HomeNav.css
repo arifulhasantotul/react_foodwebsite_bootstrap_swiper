@@ -1,5 +1,5 @@
 .home_nav_menu {
-   background: var(--fade-white);
+   background: var(--fade_white);
    padding-top: 5rem;
    margin-top: 2rem;
 }
@@ -14,7 +14,7 @@
 .home_nav_menu .featured_selected,
 .home_nav_menu .home_nav_item:hover {
    color: var(--green);
-   background: var(--fade-white);
+   background: var(--fade_white);
    text-decoration: underline;
    transition: all 0.3s linear;
 }

@@ -3,16 +3,16 @@
 :root {
    --font_rob: "Roboto", sans-serif;
    --font_pop: "Poppins", sans-serif;
-   --sidebar_bg: #11101d;
+   --dark: #11101d;
    --gray: #a4b2bc;
    --white: #fff;
    --content_bg: #e4e9f7;
    --light_dark: #1b1b31;
    --green: #27ae60;
    --black: #192a56;
-   --light-color: #666;
-   --fade-white: #eee;
-   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+   --light_color: #666;
+   --fade_white: #eee;
+   --box_shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
 *,
@@ -63,7 +63,21 @@ li {
 .swiper-pagination-bullet-active {
    background: var(--green);
 }
-
+.box_btn {
+   margin-top: 1rem;
+   display: inline-block;
+   font-size: 1.7rem;
+   color: var(--white);
+   background: var(--black);
+   border-radius: 0.5rem;
+   cursor: pointer;
+   padding: 0.8rem 3rem;
+   transition: all 0.3s ease;
+}
+.box_btn:hover {
+   background: var(--green);
+   letter-spacing: 0.1rem;
+}
 @media (max-width: 1024px) {
    html {
       font-size: 59%;

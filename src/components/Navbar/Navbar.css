@@ -43,7 +43,7 @@
    top: 0;
    left: 0;
    height: 100%;
-   background: var(--sidebar_bg);
+   background: var(--dark);
    width: calc(200px + 2vw);
    z-index: 999;
    transition: all 0.5s ease;
@@ -92,7 +92,7 @@
    padding-left: 1rem;
 }
 .sidebar .nav_menu_items .nav_link.selected .link_name {
-   color: var(--sidebar_bg);
+   color: var(--dark);
    font-weight: 500;
 }
 .sidebar .nav_menu_items .nav_link.selected {
@@ -100,17 +100,17 @@
    border-radius: 3rem 0 0 3rem;
 }
 .sidebar .nav_menu_items .nav_link.selected svg {
-   fill: var(--sidebar_bg);
+   fill: var(--dark);
 }
 .sidebar .nav_menu_items .nav_link:hover {
    background: var(--content_bg);
    border-radius: 3rem 0 0 3rem;
 }
 .sidebar .nav_menu_items .nav_link:hover svg {
-   fill: var(--sidebar_bg);
+   fill: var(--dark);
 }
 .sidebar .nav_menu_items .nav_link:hover.nav_link .link_name {
-   color: var(--sidebar_bg);
+   color: var(--dark);
    font-weight: 500;
 }
 .sidebar .nav_menu_items .nav_link .link_name {
@@ -166,7 +166,7 @@
    width: 5.2rem;
    object-fit: cover;
    border-radius: 1.6rem;
-   background: var(--sidebar_bg);
+   background: var(--dark);
    padding: 5px;
    margin: 0 1.4rem 0 1.2rem;
 }
